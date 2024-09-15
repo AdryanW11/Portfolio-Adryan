@@ -15,18 +15,23 @@
             <a href="#skills">Linguagens e Competências</a>
             <a href="#contact">Contato</a>
         </nav>
-    
+
         <header>
-            <h1>Portfólio de Adryan Willy</h1>
-            <p>Bem-vindo ao meu portfólio! Aqui você encontra minhas competências e contatos.</p>
-        
+            <div class="header-content">
+                <h1><span class="name-highlight">Adryan Willy</span></h1>
+                <p>Programador e Analista de Dados :)</p>
+            </div>
+            <div class="floating-images">
+                <img src="styles/htmlimg.png" alt="Imagem 1" class="floating-image">
+                <img src="styles/cssimg.png" alt="Imagem 2" class="floating-image">
+                <img src="styles/jsimg.png" alt="Imagem 3" class="floating-image">
+            </div>
         </header>
-    
+
         <section id="about">
             <h2>Sobre Mim</h2>
             <p>Olá, meu nome é Adryan Willy, um programador iniciante com conhecimentos em análise de dados, SQL, Power BI e desenvolvimento Full Stack. Tenho paixão por tecnologia e estou constantemente buscando aprimorar minhas habilidades para criar soluções eficientes e inovadoras.</p>
 </section>
-
 <section id="skills">
     <h2>Linguagens e Competências</h2>
     <div class="skills-carousel">
@@ -35,34 +40,46 @@
             <div class="skills-container">
                 <div class="skill-card">
                     <h3>Python</h3>
-                    <p>Nível: Básico</p>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress" style="--percentage: 35%;"></div>
+                        <div class="skill-progress-text">35%</div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <h3>SQL</h3>
-                    <p>Nível: Básico</p>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress" style="--percentage: 20%;"></div>
+                        <div class="skill-progress-text">20%</div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <h3>Power BI</h3>
-                    <p>Nível: Básico</p>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress" style="--percentage: 40%;"></div>
+                        <div class="skill-progress-text">40%</div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <h3>HTML</h3>
-                    <p>Nível: Intermediário</p>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress" style="--percentage: 65%;"></div>
+                        <div class="skill-progress-text">65%</div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <h3>CSS</h3>
-                    <p>Nível: Básico</p>
-                </div>                
+                    <div class="skill-progress-container">
+                        <div class="skill-progress" style="--percentage: 40%;"></div>
+                        <div class="skill-progress-text">40%</div>
+                    </div>
+                </div>
                 <div class="skill-card">
                     <h3>JavaScript</h3>
-                    <p>Nível: Básico</p>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress" style="--percentage: 45%;"></div>
+                        <div class="skill-progress-text">45%</div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Pacote Office</h3>
-                    <p>Nível: Intermediário</p>
-                </div>
-                
-                
             </div>
         </div>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>

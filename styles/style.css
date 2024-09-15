@@ -1,19 +1,78 @@
-
-/* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Cor de fundo para o tema escuro */
-    color: #f4f4f4; /* Cor do texto para o tema escuro */
+    background-color: #333;
+    color: #f4f4f4;
     transition: background-color 0.3s, color 0.3s;
 }
 
+
 header {
-    background-color: #222; /* Cor do cabeçalho para o tema escuro */
+    background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    position: relative; /* Necessário para posicionar as imagens flutuantes */
+    overflow: hidden; /* Garante que as imagens flutuantes não saiam do cabeçalho */
+}
+.header-content {
+    position: relative;
+    z-index: 1; /* Garante que o texto fique sobre as imagens flutuantes */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+header h1 .name-highlight {
+    color: #8a2be2; /* Roxo */
+    display: inline-block; /* Necessário para a animação funcionar corretamente */
+    animation: float 3s ease-in-out infinite;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Animação de flutuar */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Imagens flutuantes */
+.floating-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-image {
+    width: 50px; /* Ajuste conforme necessário */
+    height: 50px; /* Ajuste conforme necessário */
+    margin: 0 15px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.floating-image:nth-child(3) {
+    animation-delay: 4s;
 }
 
 nav {
@@ -24,7 +83,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #f4f4f4; /* Cor dos links para o tema escuro */
+    color: #f4f4f4;
     font-weight: bold;
 }
 
@@ -32,13 +91,12 @@ section {
     padding: 20px;
     max-width: 1000px;
     margin: auto;
-    background-color: #444; /* Cor de fundo das seções para o tema escuro */
+    background-color: #444;
     color: #f4f4f4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #222; /* Cor do rodapé para o tema escuro */
+    background-color: #222; 
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -51,7 +109,7 @@ button {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    background-color: #f4f4f4; /* Cor do botão para o tema escuro */
+    background-color: #f4f4f4;
     color: #333;
     border: none;
     transition: background-color 0.3s, color 0.3s;
@@ -81,14 +139,41 @@ button:hover {
 }
 
 .skill-card {
-    flex: 0 0 auto; /* Impede o cartão de redimensionar */
     min-width: 250px;
-    background-color: #555; /* Cor de fundo dos cartões para o tema escuro */
+    background-color: #555;
     padding: 20px;
     border: 1px solid #ddd;
     text-align: center;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-progress-container {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.skill-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(orange var(--percentage), transparent var(--percentage));
+    border: 5px solid #f4f4f4; /* Borda do círculo */
+}
+
+.skill-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .prev, .next {
