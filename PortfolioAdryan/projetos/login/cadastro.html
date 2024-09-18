@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Opera GX Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Cadastro</h1>
+        <form id="register-form">
+            <div class="input-field">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+                <p id="password-error" class="error hidden">A senha deve ter pelo menos 8 caracteres.</p>
+            </div>
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+
+        <form id="login-form" class="hidden">
+            <h2>Login</h2>
+            <p>Por favor, refaça os passos para entrar no site.</p>
+            <div class="input-field">
+                <label for="login-username">Usuário:</label>
+                <input type="text" id="login-username" required>
+            </div>
+            <div class="input-field">
+                <label for="login-password">Senha:</label>
+                <input type="password" id="login-password" required>
+                <p id="login-error" class="error hidden">Usuário ou senha incorretos. Tente novamente.</p>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+            <button id="forgot-password" class="btn hidden">Esqueci minha senha</button>
+        </form>
+
+        <div id="welcome-page" class="hidden">
+            <h2>Bem-vindo ao site!</h2>
+            <p>projeto de login</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

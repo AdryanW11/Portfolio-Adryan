@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #101630;
+    color: white;
+}
+
+
+header {
+    background-color: #101630;
+    padding: 20px;
+    text-align: center;
+    /*border-bottom: 1px solid #fff; ficou feio */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #FF2CDF;
+}
+
+/* Texto Flutuante */
+.floating-text {
+    font-family: 'Georgia', serif; 
+    font-weight: bold;  
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    animation: floating 6s ease-in-out infinite;
+
+}
+
+/* Projetos */
+.portfolio-projects .project {
+    background-color: #1B2430;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project.hidden {
+    display: none;
+}
+
+/* Seção de Portfólio */
+#portfolio {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-filters {
+    margin-bottom: 20px;
+}
+
+.btn-filter {
+    background: linear-gradient(45deg, #00E1FD, #FC007A);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-filter:hover {
+    transform: scale(1.1);
+}
+
+/* Animação de flutuação */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Sobre Mim Section */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 20px;
+}
+
+.sobre-texto {
+    background-color: #1B2430;
+    padding: 20px;
+    max-width: 50%;
+    position: relative;
+    margin-left: 5%; /* Adiciona um espaçamento à esquerda */
+    transition: max-width 0.5s ease;
+}
+
+.sobre-texto h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.sobre-botoes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.sobre-botoes .btn-grad {
+    background: linear-gradient(45deg, #00E1FD, #FC007A);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sobre-botoes .btn-grad:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sobre, #portfolio, #servicos, #experiencias, #contato {
+    background-color: #101630;
+    min-height: 100vh;
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#contato h1 {
+    color: #00E1FD;
+    border-bottom: 2px solid #FC007A;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#contato ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contato li {
+    margin-bottom: 10px;
+}
+
+#contato a {
+    color: #FF2CDF;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}

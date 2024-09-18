@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Adryan Willy</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Texto flutuante -->
+<div class="floating-text">
+    Olá, eu Sou Adryan Willy<br> Programador FullStack
+</div>
+
+<section id="sobre"  class="animate-on-scroll">
+    <div class="sobre-container">
+        <div class="sobre-texto" id="sobre-texto">
+            <h1>Sobre Mim</h1>
+            <p id="texto-curto">Bem-vindo ao meu portfólio. Sou Adryan Willy, programador e analista de dados.</p>
+            <p id="texto-completo" class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos, minima commodi harum nesciunt porro, doloribus, ex deserunt minus omnis molestiae voluptatum in fugiat aliquid totam enim iste dolore corporis.</p>
+        </div>
+        <div class="sobre-botoes">
+            <button class="btn-grad" onclick="expandirTexto()">Mais</button>
+            <button class="btn-grad" onclick="scrollContato()">Contato</button>
+        </div>
+    </div>
+</section>
+
+
+<section id="portfolio" class="animate-on-scroll">
+    <h1>Portfólio</h1>
+    <!-- Botões de filtro -->
+    <div class="portfolio-filters">
+        <button class="btn-filter" onclick="filterProjects('python')">Python</button>
+        <button class="btn-filter" onclick="filterProjects('website')">Website</button>
+        <button class="btn-filter" onclick="filterProjects('android')">Android</button>
+        <button class="btn-filter" onclick="filterProjects('others')">Others</button>
+    </div>
+    <!-- Projetos -->
+    <div class="portfolio-projects">
+        <div class="project python">
+            <img src="images/python-project.jpg" alt="Projeto Python 1" class="project-image">
+            <a href="projetos/jogo/index.html">
+                <h2>RPG</h2></a> 
+           <p>Descrição do projeto Website 1.</p>
+       </div>
+
+        
+        <div class="project website">
+            <img src="images/website-project.jpg" alt="Projeto Website 1" class="project-image">
+            <a href="projetos/login/cadastro.html">
+                 <h2>Tela de Login</h2></a> 
+            <p>Descrição do projeto Website 1.</p>
+        </div>
+
+        <div class="project android">
+            <img src="images/android-project.jpg" alt="Projeto Android 1" class="project-image">
+            <h2>Android Project 1</h2>
+            <p>Descrição do projeto Android 1.</p>
+        </div>
+
+        <div class="project others">
+            <img src="images/others-project.jpg" alt="Projeto Others 1" class="project-image">
+            <a href="projetos/calculadora/calculadora.html">
+            <h2>Calculadora</h2> </a>
+            <p>Uma simples calculadora</p>
+        </div>
+
+        
+        <div class="project others">
+            <img src="images/others-project.jpg" alt="Projeto Others 2" class="project-image">
+            <a href="projetos/relogio/relo.html">
+            <h2>Cronômetro</h2> </a>
+            <p>Um simples Cronômetro</p>
+        </div>
+
+        <div class="project others">
+            <img src="images/others-project.jpg" alt="Projeto Others 2" class="project-image">
+            <a href="projetos/analiseDados/analise.html">
+            <h2>Grafico</h2> </a>
+            <p>Um simples Cronômetro</p>
+        </div>
+
+
+        <div class="project website">
+            <img src="images/website-project.jpg" alt="Projeto Website 2" class="project-image">
+            <h2>Website Project 2</h2>
+            <p>Descrição do projeto Website 1.</p>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </div>
+</section>
+
+<section id="servicos" class="animate-on-scroll">
+    <h1>Serviços</h1>
+    <p>Ofereço serviços de programação e análise de dados.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia doloribus facere voluptatibus facilis laboriosam placeat explicabo rem commodi ipsam minus saepe eligendi reprehenderit, ullam delectus laborum nisi aperiam tempore.</p>
+</section>
+
+<section id="experiencias" class="animate-on-scroll">
+    <h1>Experiências</h1>
+    <p>Aqui vou listar as minhas experiências profissionais.</p>
+    <p>em construção</p>
+</section>
+
+<section id="contato" class="animate-on-scroll">
+    <h1>Contato</h1>
+    <p>Entre em contato comigo pelo formulário abaixo.</p>
+    <ul>
+        <li><strong>Número:</strong> (77) 981246397</li>
+        <li><strong>Email:</strong> <a href="mailto:adryanwilly98989@gmail.com">adryanwilly98989@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/a_dryan_willy/" target="_blank">a_dryan_willy</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/AdryanW11" target="_blank">AdryanW11</a></li>
+    </ul>
+</section>
+</body>
+</html>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
