@@ -1,0 +1,73 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101630;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ff2cdf;
+}
+
+#scoreboard {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#toggleAI {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #00e1fd;
+    color: #101630;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+#gameArea {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #2c3e50;
+    border: 2px solid #fff;
+}
+
+
+.paddle {
+    width: 10px;
+    height: 80px;
+    background-color: #ecf0f1;
+    position: absolute;
+}
+
+#paddleLeft {
+    left: 0;
+    top: 160px;
+}
+
+#paddleRight {
+    right: 0;
+    top: 160px;
+}
+
+
+#ball {
+    width: 15px;
+    height: 15px;
+    background-color: #ff2cdf;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
